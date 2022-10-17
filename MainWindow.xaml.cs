@@ -24,5 +24,11 @@ namespace Contacts_Desktop_Application
         {
             InitializeComponent();
         }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            AddNewContactWindow addContact = new AddNewContactWindow();
+            addContact.ShowDialog();
+        }
     }
 }

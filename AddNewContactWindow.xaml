@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Contacts_Desktop_Application"
         mc:Ignorable="d"
-        Title="AddNewContactWindow" Height="450" Width="800">
+        Title="AddNewContactWindow" Height="450" Width="400">
+
     <Grid>
-        
+        <StackPanel Margin="10">
+            <TextBox Margin="5" Height="40" x:Name="nameTextBox"/>
+            <TextBox Margin="5" Height="40" x:Name="emailTextBox"/>
+            <TextBox Margin="5" Height="40" x:Name="phoneTextBox"/>
+            <Button Margin="10" Width="80" Height="40" Content="Save"  FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="saveButton" Click="saveButton_Click"/>
+        </StackPanel>
     </Grid>
 </Window>
