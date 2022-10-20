@@ -15,7 +15,7 @@ namespace Contacts_Desktop_Application.Models
 
         public string FirstName { get; set; }
 
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
 
         [Ignore]
         public string FullName
@@ -29,12 +29,12 @@ namespace Contacts_Desktop_Application.Models
          }
 
         [MinLength(1)]
-        public string Phone { get; set; }
+        public string? Phone { get; set; }
 
-        public DateTime DateCreated { get; set; } = DateTime.Now;
+        public DateTime DateCreated { get; set; }
 
         [EmailAddress]
-        public string Email { get; set; }
+        public string? Email { get; set; }
 
     }
 }
